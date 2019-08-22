@@ -2,10 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+	<!--css-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--JS, Popper.js, and jQuery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Vue js-->	
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<!--vtyped js-->
@@ -14,6 +16,15 @@
 	<title>WEI's Resume</title>
 	<!-- Css 設計-->	
 	<style type="text/css">
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+		#my-2.my-md-0.mr-md-3{
+			margin: 0;
+			padding: 0;
+		}
 		#DyTitle{
 			margin-left:120px;
 			margin-right:120px;
@@ -26,7 +37,7 @@
 		  background-image: url(https://i.imgur.com/qJYG5sG.jpg);
 		  background-size: cover;
 		  display: table;
-		  background-attachment: fixed;
+		  background-attachment: absolute;
 		}
 		#box2{
 		  height: 50vh;
@@ -34,6 +45,8 @@
 		  background-size: cover;
 		  display: table;
 		  background-attachment: fixed;
+		  padding-top: 20px;
+		  padding-bottom: 20px;
 		}
 		#box3{
 		  height: 50vh;
@@ -42,12 +55,10 @@
 		  display: table;
 		  background-attachment: fixed;
 		}
-
 		body{
 		  margin: 0;
 		  padding: 0;
 		}
-
 		a{
 			color: white;
 		}
@@ -64,16 +75,13 @@
 	</script>-->
 </head>
 <body>
-	<nav class="navbar navbar-fixed-top navbar-light">
-			<a class="navbar-brand" href="#">WEI</a>
-				<ul class="nav navbar-nav navbar-right">
-					<li id="nav-about"><a href="#about" class="scroll effect p-2 active">About</a></li>	
-					<li id="nav-skill"><a href="#skill" class="scroll effect p-2 active">Skill</a></li>
-					<li id="nav-experienceandeducation"><a href="#experienceandeducation" class="scroll effect p-2 active">Experience&Education</a></li>
-					<li id="nav-project"><a href="#project" class="scroll effect p-2 active">Project</a></li>
-					<li id="nav-otherexperience"><a href="#otherexperience" class="scroll effect p-2 active">OtherExperience</a></li>
-				</ul>
-		</div>
+	<nav class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 bg-white shadow-sm">
+		<h5 class="my-0 mr-md-auto font-weight-normal">Harry</h5>
+		<a class="p-2 text-dark" href="#about">About</a>
+		<a class="p-2 text-dark" href="#skills">Skills</a>
+		<a class="p-2 text-dark" href="#experienceandeducation">Experience&Education</a>
+		<a class="p-2 text-dark" href="#project">Project</a>
+		<a class="p-2 text-dark" href="#otherexperience">OtherexPerience</a>
 	</nav>
 
 	<div id="box1">
@@ -107,12 +115,46 @@
 
 	<div id="box3">
 		<div class="container">
-			<div class="content">
-				<h1>Skills</h1>
+			<h1>Skills</h1>
+			<div class="card-deck mb-3 text-center">
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">自動程式交易</h4>
+					</div>
+					<div class="card-body">
+					<h5 class="card-title pricing-card-title">C# & Python</h5>
+					<ul class="list-unstyled mt-3 mb-4">
+						<li>使用Python抓取公司歷年財報分析</li>
+						<li>使用C#連接卷商API 接收股價並自動化</li>
+					</ul>
+					</div>
+				</div>
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">網頁專題</h4>
+					</div>
+					<div class="card-body">
+					<h5 class="card-title pricing-card-title">HTML & Bootstrap & MySQL</h5>
+					<ul class="list-unstyled mt-3 mb-4">
+						<li>使用Html & Bootstrap排版網頁</li>
+						<li>使用MySQL儲存資料</li>
+					</ul>
+					</div>
+				</div>
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">自動化測試</h4>
+					</div>
+					<div class="card-body">
+					<h5 class="card-title pricing-card-title">JAVA</h5>
+					<ul class="list-unstyled mt-3 mb-4">
+						<li>測試網頁API</li>
+					</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
 
 
 
