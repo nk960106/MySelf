@@ -32,28 +32,29 @@
 			margin-top: 25%;
 		}
 		#box1{
-		  height: 100vh;
-		  width: 100%;
-		  background-image: url(https://i.imgur.com/qJYG5sG.jpg);
-		  background-size: cover;
-		  display: table;
-		  background-attachment: absolute;
+			padding-top: 5%;
+			height: 100vh;
+			width: 100%;
+			background-image: url(https://i.imgur.com/qJYG5sG.jpg);
+			background-size: cover;
+			display: table;
+			background-attachment: absolute;
 		}
 		#box2{
-		  height: 50vh;
-		  width: 100%;
-		  background-size: cover;
-		  display: table;
-		  background-attachment: fixed;
-		  padding-top: 20px;
-		  padding-bottom: 20px;
+			height: 80vh;
+			width: 100%;
+			background-size: cover;
+			display: table;
+			background-attachment: fixed;
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
 		#box3{
-		  height: 50vh;
-		  width: 100%;
-		  background-size: cover;
-		  display: table;
-		  background-attachment: fixed;
+			height: 50vh;
+			width: 100%;
+			background-size: cover;
+			display: table;
+			background-attachment: fixed;
 		}
 		body{
 		  margin: 0;
@@ -75,14 +76,41 @@
 	</script>-->
 </head>
 <body>
-	<nav class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 bg-white shadow-sm">
+	<!--<nav class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 bg-white shadow-sm">
 		<h5 class="my-0 mr-md-auto font-weight-normal">Harry</h5>
 		<a class="p-2 text-dark" href="#about">About</a>
 		<a class="p-2 text-dark" href="#skills">Skills</a>
 		<a class="p-2 text-dark" href="#experienceandeducation">Experience&Education</a>
 		<a class="p-2 text-dark" href="#project">Project</a>
 		<a class="p-2 text-dark" href="#otherexperience">OtherexPerience</a>
-	</nav>
+	</nav>-->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+			<a class="navbar-brand text-dark" href="#">Harry</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon my-toggler"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link text-dark" href="#">About <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Experience&Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Project</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">OtherExperience</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
 	<div id="box1">
 		<div class="container">
@@ -100,9 +128,10 @@
 		<div class="container">
 			<div class="content">
 				<h1>About Me</h1>
-				<h3>I'm Harry Chen / 陳家偉</h3>
+				<h3>I'm Harry Chen</h3>
+				<h3>陳家偉</h3>
 				<p>I believe that practice can make perfect. I like to learn new things.</p>
-				<p style="max-width:50%; font-size: 15px">
+				<p style="max-width:90%; font-size: 17px">
 					學習過C++、JAVA、使用過MySQL、HTML、Bootstrap，製作過網頁專題等。
 					畢業專題是<strong><em>自動程式交易</em></strong>，自學Python與C#。
 					成績優異提早於2017年1月畢業，申請入伍完成男人應盡的義務當兵，
